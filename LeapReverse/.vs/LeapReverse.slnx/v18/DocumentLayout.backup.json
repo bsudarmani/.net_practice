@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\z.net\\LeapReverse\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8752AAFA-AE7C-4B9A-B965-703E74728BF1}|Solution Items{8752AAFA-AE7C-4B9A-B965-703E74728BF1}|D:\\z.net\\LeapReverse\\Default||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{8752AAFA-AE7C-4B9A-B965-703E74728BF1}|Solution Items{8752AAFA-AE7C-4B9A-B965-703E74728BF1}|solutionrelative:Default||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Default",
+              "DocumentMoniker": "D:\\z.net\\LeapReverse\\Default",
+              "RelativeDocumentMoniker": "Default",
+              "ToolTip": "D:\\z.net\\LeapReverse\\Default",
+              "RelativeToolTip": "Default",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-04-07T16:44:43.43Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

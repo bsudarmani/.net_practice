@@ -1,0 +1,476 @@
+using System;
+
+public class FindDigit1
+{
+    public static void Main(string[] args)
+    {
+        int num = 1, ch = 97, count = 0;
+        String temp = "";
+        Console.WriteLine("Enter the string:");
+        String str = Console.ReadLine();
+        while (count < str.Length)
+        {
+            temp += str[count];
+            if (count % 2 == 0)
+            {
+                temp += (char)ch;
+                ch++;
+            }
+            else
+            {
+                temp += num;
+                num++;
+            }
+            count++;
+        }
+        Console.WriteLine("String Encrypt:" + temp);
+    }
+}
+
+
+======================================================
+
+using System;
+
+public class FindDigit1
+{
+    public static void Main(string[] args)
+    {
+        String str = " ";
+        while(true)
+        {
+            Console.WriteLine("Enter the string");
+            str = Console.ReadLine();
+            for(int i=0;i<128;i++)
+            {
+                int count = 0;
+                foreach(char c in str)
+                {
+                    if(c==(char)i)
+                    {
+                        count++;
+                    }
+                }
+                Console.WriteLine("{0}{1}",(char)i,count);
+            }
+            Console.WriteLine("do you continue");
+            String ch = Console.ReadLine();
+            if(ch=="no")
+            {
+                break;
+            }
+        }
+    }
+}
+
+
+-------------------------------------------------------
+
+using System;
+
+public class FindDigit1
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("enter the number");
+        int n = int.Parse(Console.ReadLine());
+        int[,] arr = new int[n, n];
+        for(int i=0;i<n;i++)
+        {
+            for(int j=0;j<n;j++)
+            {
+                arr[i, j] = int.Parse(Console.ReadLine());
+            }
+        }
+        int rsum = 0, csum = 0;
+        for(int i=0;i<n;i++)
+        {
+            rsum = 0; csum = 0;
+            for(int j=0;j<n;j++)
+            {
+                rsum += arr[i, j];
+                csum += arr[j, i];
+            }
+            Console.WriteLine("rowsum:"+(i+1) + " " + rsum +"colsum:"+(i+1)+" "+csum);
+        }
+    }
+}
+
+
+------------------------------------------------------
+using System;
+
+public class Sample
+{
+    public void swap<T>(ref T a,ref T b)
+    {
+        T temp;
+        temp = a;
+        a = b;
+        b = temp;
+    }
+}
+public class FindDigit1
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("enter the First name");
+        String a = Console.ReadLine();
+
+        Console.WriteLine("Enter the second name");
+        String b = Console.ReadLine();
+
+        Sample s1 = new Sample();
+
+        Console.WriteLine("before the value a and b "+ a + " " + b);
+
+        s1.swap(ref a, ref b);
+
+        Console.WriteLine("After the value a and b  "+ a + " " + b);
+    }
+}
+
+
+-------------------------------------------------------
+using System;
+using System.Security.Cryptography;
+
+public class FindDigit1
+{
+    public static void Main(string[] args)
+    {
+        List<String> names = new List<string>();
+        int n = 0;
+        while(n!=3)
+        {
+            Console.WriteLine("Enter the choice \n1.add \n2.sort names \n3.exit");
+            int ch = int.Parse(Console.ReadLine());
+            switch (ch)
+            {
+                case 1:
+
+                    Console.WriteLine("Enter the names");
+                    names.Add(Console.ReadLine());
+                    break;
+
+                case 2:
+
+                    Console.WriteLine("Enter the number:sort the names \n1.asc \n2.dsc");
+                    int ch1 = int.Parse(Console.ReadLine());
+                    if (ch1 == 1)
+                    {
+                        var sorted = names.OrderBy(x => x);
+                        foreach (String asort in sorted)
+                        {
+                            Console.WriteLine(asort);
+                        }
+                    }
+                    else
+                    {
+                        var sorted = names.OrderByDescending(x => x);
+                        foreach (String rsort in sorted)
+                        {
+                            Console.WriteLine(rsort);
+                        }
+                    }
+                    break;
+                case 3:
+                    Console.WriteLine("Exiting..");
+                    return;
+                default:
+                    Console.WriteLine("Invalid option");
+                    break;
+
+            }
+        }
+    }
+}
+
+------------------------------------------------------
+using System;
+using System.Security.Cryptography;
+
+public class FindDigit1
+{
+    static public void patternprint(int row,int type,String symbol)
+    {
+        for(int i=1;i<=row;i++)
+        {
+            for(int j=i;j<=row;j++)
+            {
+                Console.Write(" ");
+            }
+            for(int k=1;k<=i;k++)
+            {
+              if(type==1)
+                {
+                    Console.Write("* ");
+                }
+              else if(type==2)
+                {
+                    Console.Write(k + " ");
+                }
+              else if(type==3)
+                {
+                    Console.Write((char)64+k + " ");
+                }
+              else if(type==4)
+                {
+                    Console.Write(""+symbol+" ");
+                }
+            }
+            Console.WriteLine();
+        }
+    }
+
+
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("Enter the number to perform operation");
+        int n = int.Parse(Console.ReadLine());
+        while(true)
+        {
+            Console.WriteLine("\n1.star \n2.number \n3.char \n4.symbol");
+            String symbol = "";
+            Console.WriteLine("enter your choice");
+            String type = Console.ReadLine();
+            if (int.Parse(type) == 4)
+            {
+                Console.WriteLine("Enter the symbol");
+                symbol = Console.ReadLine();
+                patternprint(n, int.Parse(type), symbol);
+            }
+            else
+            {
+                patternprint(n, int.Parse(type), symbol);
+            }
+            
+        }
+
+    }
+}
+
+-----------------------------------------------------
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+public partial class _Default : System.Web.UI.Page
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+
+    }
+    protected void TextBox1_TextChanged(object sender, EventArgs e)
+    {
+       
+    }
+    protected void Button1_Click(object sender, EventArgs e)
+    {
+        int num = int.Parse(TextBox1.Text);
+        String temp = " ";
+        if (((num % 4 == 0) && (num % 100 != 0)) || num % 400 == 0)
+        {
+            Label2.Text = "Leap year";
+        }
+        else
+        {
+            Label2.Text = "Not leap";
+        }
+    }
+    protected void Button2_Click(object sender, EventArgs e)
+    {
+        String num = TextBox1.Text;
+        String temp = " ";
+        for (int i = num.Length-1; i >= 0; i--)
+        {
+            temp += num[i];
+        }
+        Label2.Text = "Reverse of Num:" + temp;
+    }
+}
+
+
+
+-------------------------------------------------------
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Data.Sql;
+using System.Data.SqlClient;
+
+public partial class _Default : System.Web.UI.Page
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+
+    }
+    protected void TextBox1_TextChanged(object sender, EventArgs e)
+    {
+
+    }
+    protected void TextBox2_TextChanged(object sender, EventArgs e)
+    {
+
+    }
+  /*  protected void Button1_Click(object sender, EventArgs e)
+    {
+        String name = TextBox1.Text;
+        String passwprd = TextBox2.Text;
+        try
+        {
+            SqlConnection con = new SqlConnection("Data Source=Type;Initial Catalog=PCA153;username=sa;password=sa123");
+            SqlCommand cmd = new SqlCommand("insert into stu_login (stu_name,stu_pass) values('" + name + "','" + passwprd + "')");
+            con.Open();
+            cmd.ExecuteNonQuery();
+            con.Close();
+
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex);
+        }
+    }*/
+    protected void Button1_Click(object sender, EventArgs e)
+    {
+        String name = TextBox1.Text;
+        String password = TextBox2.Text;
+
+        try
+        {
+            SqlConnection con = new SqlConnection("Data Source=AJCAMPUSNETSERV\\SQLEXPRESS;Initial Catalog=PCA153;User ID=sa;Password=sa123");
+
+            SqlCommand cmd = new SqlCommand("INSERT INTO stu_login (stu_name, stu_pass) VALUES (@name, @password)", con);
+
+            cmd.Parameters.AddWithValue("@name", name);
+            cmd.Parameters.AddWithValue("@password", password);
+
+            con.Open();
+            cmd.ExecuteNonQuery();
+            con.Close();
+
+            Response.Write("Data inserted successfully!");
+        }
+        catch (Exception ex)
+        {
+            Response.Write("Error: " + ex.Message);
+        }
+    }
+    protected void Button2_Click(object sender, EventArgs e)
+    {
+
+    }
+}
+
+
+
+-------------------------------------------------------------------------------------------------
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+public partial class _Default : System.Web.UI.Page
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        if (Session["count"] == null)
+        {
+            Session["count"] = 1;
+        }
+        else
+        {
+            Session["count"]= (int)Session["count"] + 1;
+            Label1.Text="visitor count" + Session["count"] + "Times";
+        }
+    }
+}
+
+------------------------------------------------------
+
+using System;
+using System.Security.Cryptography;
+
+public class FindDigit1
+{
+    
+    public static void Main(string[] args)
+    {
+        while (true)
+        {
+            Console.WriteLine("Enter the no of rows");
+            int row = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter the no of cols");
+            int cols = int.Parse(Console.ReadLine());
+            int[,] arr = new int[row, cols];
+            for (int i = 0; i < row; i++)
+            {
+                for (int j = 0; j < cols; j++)
+                {
+                    arr[i, j] = int.Parse(Console.ReadLine());
+                }
+            }
+            int[] sarr = new int[row * cols];
+            int index = 0;
+            for (int i = 0; i < row; i++)
+            {
+                for (int j = 0; j < cols; j++)
+                {
+                    sarr[index++] = arr[i, j];
+                }
+            }
+            Console.WriteLine("Duplicate elements");
+            for (int i = 0; i < sarr.Length; i++)
+            {
+                int count=0;
+                for (int j = 0; j < sarr.Length; j++)
+                {
+                    if (sarr[i] == sarr[j])
+                    {
+                        count++;
+                    }
+                }
+
+                if (count > 1)
+                {
+                    bool alreadprint = false;
+                    for (int k = 0; k < i; k++)
+                    {
+                        if (sarr[i] == sarr[k])
+                        {
+                            alreadprint = true;
+                            break;
+                        }
+                    }
+                    if (!alreadprint)
+                    {
+                        Console.WriteLine(sarr[i] + " " + count);
+                    }
+                }
+
+            }
+            Console.WriteLine("do you continue");
+            String op = Console.ReadLine();
+            if (op == "no")
+            {
+                break;
+            }
+        }
+    }
+}
+
+-----------------------------------------------------
+
