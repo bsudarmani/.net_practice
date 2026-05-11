@@ -1,0 +1,7 @@
+D:\z.net\LibaryManagement\bin\Debug\LibaryManagement.exe.config
+D:\z.net\LibaryManagement\bin\Debug\LibaryManagement.exe
+D:\z.net\LibaryManagement\bin\Debug\LibaryManagement.pdb
+D:\z.net\LibaryManagement\obj\Debug\LibaryManagement.csproj.AssemblyReference.cache
+D:\z.net\LibaryManagement\obj\Debug\LibaryManagement.csproj.CoreCompileInputs.cache
+D:\z.net\LibaryManagement\obj\Debug\LibaryManagement.exe
+D:\z.net\LibaryManagement\obj\Debug\LibaryManagement.pdb

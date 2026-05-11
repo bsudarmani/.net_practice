@@ -1,0 +1,10 @@
+D:\z.net\ProcedureLogin\bin\Debug\ProcedureLogin.exe.config
+D:\z.net\ProcedureLogin\bin\Debug\ProcedureLogin.exe
+D:\z.net\ProcedureLogin\bin\Debug\ProcedureLogin.pdb
+D:\z.net\ProcedureLogin\obj\Debug\ProcedureLogin.csproj.AssemblyReference.cache
+D:\z.net\ProcedureLogin\obj\Debug\ProcedureLogin.Form1.resources
+D:\z.net\ProcedureLogin\obj\Debug\ProcedureLogin.Properties.Resources.resources
+D:\z.net\ProcedureLogin\obj\Debug\ProcedureLogin.csproj.GenerateResource.cache
+D:\z.net\ProcedureLogin\obj\Debug\ProcedureLogin.csproj.CoreCompileInputs.cache
+D:\z.net\ProcedureLogin\obj\Debug\ProcedureLogin.exe
+D:\z.net\ProcedureLogin\obj\Debug\ProcedureLogin.pdb

@@ -1,0 +1,7 @@
+D:\z.net\SampleApplication\bin\Debug\SampleApplication.exe.config
+D:\z.net\SampleApplication\bin\Debug\SampleApplication.exe
+D:\z.net\SampleApplication\bin\Debug\SampleApplication.pdb
+D:\z.net\SampleApplication\obj\Debug\SampleApplication.csproj.AssemblyReference.cache
+D:\z.net\SampleApplication\obj\Debug\SampleApplication.csproj.CoreCompileInputs.cache
+D:\z.net\SampleApplication\obj\Debug\SampleApplication.exe
+D:\z.net\SampleApplication\obj\Debug\SampleApplication.pdb
